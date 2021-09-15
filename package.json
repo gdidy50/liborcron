@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "npm install && npx playwright install",
     "main": "node index.js"
   },
   "keywords": [],
