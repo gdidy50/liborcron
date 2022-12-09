@@ -1,5 +1,4 @@
 .env
 node_modules
-screenshots/*
 libor_rates.zip
 .DS_Store
