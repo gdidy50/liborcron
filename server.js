@@ -1,9 +1,10 @@
-const express = require('express')
+import express from 'express'
+import './lib/cron.js'
+
 const app = express()
 const port = 3000
-require('./lib/cron')
 
-app.get('/libor-rates', async (req, res) => {
+app.get('/libor-rates/download', async (req, res) => {
 	res.download('./libor_rates.zip')
 })
 
