@@ -11,7 +11,7 @@ app.get('/libor-rates/download', async (req, res) => {
 
 app.get('/libor-rates', async (req, res) => {
 	fs.readdir('./screenshots', (err, files) => {
-		if (err) return console.log('unable to scan directory: ' + err)
+		if (err) return res.status(500).send('unable to scan directory: ' + err)
 		res.status(200).send(files)
 	})
 })
