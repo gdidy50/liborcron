@@ -1,3 +1,3 @@
 # LIBORCRON
 
-A small NodeJS script that uses [playwright](https://github.com/microsoft/playwright) and [nodemailer](https://github.com/nodemailer/nodemailer) to grab a screenshot of the daily LIBOR rates from the [WSJ](https://www.wsj.com/market-data/bonds) and send out an email with the screenshot as an attachment.
+A small NodeJS server that uses [puppeteer](https://pptr.dev/) to grab a screenshot of the daily LIBOR rates from the [WSJ](https://www.wsj.com/market-data/bonds) and [CME Group](https://www.cmegroup.com/market-data/cme-group-benchmark-administration/term-sofr.html) and provides a download link.
